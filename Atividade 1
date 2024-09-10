@@ -1,4 +1,4 @@
-//calcular o dobro de um numero.
+/*calcular o dobro de um numero.*/
 #include <stdio.h>
 
 int main(){
