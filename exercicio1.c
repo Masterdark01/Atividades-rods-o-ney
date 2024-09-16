@@ -1,27 +1,21 @@
-/*nome:.....nickolas
-  data..: 10/09/2024
-  exercicio....: 1*/
+/*nome: nickolas
+data: 15/09/2024
+exercicio: 1*/
 
 #include <stdio.h>
 
 int main(){
+    int numero;
 
-int tempo;
-float valor; 
-float taxa; 
-float prestacao;
+    printf("digite um numero:\n");
+    scanf("%d", &numero);
 
-printf("digite o valor:\n");
-scanf("%f", &valor);
-printf("digite a taxa:\n");
-scanf("%f", &taxa);
-printf("digite o tempo:\n");
-scanf("%d", &tempo);
-
-taxa = taxa / 100;
-prestacao = valor + (valor * taxa * tempo);
-
-printf("o valor da prestacao atrasada e igual a: %.2f\n", prestacao);
-
-return 0;
+    if (numero > 0){
+        numero = numero + 5;
+        printf("o valor e:%d", numero);
+    } else {
+        numero = numero + 8;
+        printf("o valor e: %d", numero);
+    }
+    return 0;
 }
