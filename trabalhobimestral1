@@ -78,7 +78,12 @@ int main(){
             areatri = (basetri * alturatri) / 2;
             printf("a area do triangulo e : %.2f", areatri);
         break;
-            
+        
+        default:
+        
+        printf("Opcao errada, feche o programa e tente novamente");
+        
+        break;
     }
     return 0;
 
