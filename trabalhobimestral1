@@ -1,0 +1,85 @@
+/* Autor....:
+   Data.....:
+   Objetivo.: */
+
+#include <stdio.h>
+
+int main(){
+    float areacir;
+    float pi = 3.1416;
+    float raio;
+    float areare;
+    float ladore;
+    float alturare;
+    float areatra;
+    float basemaitra;
+    float basementra;
+    float alturatra;
+    float areatri;
+    float basetri;
+    float alturatri;
+    int escolha;
+
+
+    printf("1 - calculo da area do circulo\n");
+    printf("2 - calculo da area do retangulo\n");
+    printf("3 - calculo da area do trapezio\n");
+    printf("4 - calculo da area do retangulo\n");
+    printf("escolha uma opcao ");
+    scanf("%d", &escolha);
+    
+
+
+
+    switch (escolha){
+        case 1:
+
+            printf("voce escolheu a opcao 1.\n");
+            printf("informe o raio do circulo " );
+            scanf("%f", &raio);
+            areacir = pi * (raio * raio);
+            printf("a area do circulo e : %.2f", areacir);
+
+        break;
+        
+        case 2:
+            
+            printf("voce escolheu a opcao 2.\n");
+            printf("informe o lado do retangulo " );
+            scanf("%f", &ladore);
+            printf("informe a altura do retangulo " );
+            scanf("%f", &alturare);
+            areare = ladore * alturare;
+            printf("a area do do retangulo e : %.2f", areare);
+
+        break;
+        
+        case 3: 
+            
+            printf("voce escolheu a opcao 3.\n");
+            printf("informe a base maior do trapezio ");
+            scanf("%f", &basemaitra);
+            printf("informe a base menor do trapezio ");
+            scanf("%f", &basementra);
+            printf("informe a altura do trapezio ");
+            scanf("%f", &alturatra);
+            areatra = ((basemaitra + basementra) * alturatra) / 2;
+            printf("a area do trapezio e : %.2f", areatra);
+        
+        break;
+        
+        case 4: 
+            
+            printf("voce escolheu a opcao 4.\n");
+            printf("informe a base do triangulo " );
+            scanf("%f", &basetri);
+            printf("informe a base menor do trapezio " );
+            scanf("%f", &alturatri);
+            areatri = (basetri * alturatri) / 2;
+            printf("a area do triangulo e : %.2f", areatri);
+        break;
+            
+    }
+    return 0;
+
+}
